@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+}
+
+html{
+  height:100%;
+}
+
+.text{
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1{
+  font-size: 3em;
+  text-align: center;
+  color:rgb(112, 112, 112);
+  color: white;
+}
+
+#participantes{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#botones{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#input_participantes{
+  width:15em;
+  height:1em;
+  padding:0.8em;
+  font-weight: 600;
+  border-radius:1em;
+  border:none;
+  box-shadow: 0px 0px 1px;
+}
+.button{
+  border-radius: 1em;
+  padding:0.5em;
+  margin:0em 0.5em; 
+  font-weight: 600;
+}
+.button_circle{
+  
+  font-weight: 600;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:white;
+}
+#participantes_activos{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:2em 0em;
+}
+
+.participante{
+  margin:0.5em 0em;
+  
+  color:white
+}
+
+@keyframes cambio-color{
+  0%{
+    background-color: red;
+  }
+  25%{
+    background-color: green;
+  }
+  50%{
+    background-color: blue;
+  }
+  75%{
+    background-color: purple;
+  }
+  100%{
+    background-color: red;
+  }
+}
+.rombo {
+  margin:2em 0em;
+  width: 15em; 
+  height: 15em; 
+  background: #428bca;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor:pointer;
+}
+.rombito{
+  animation: cambio-color 4s ;
+}
+#new{
+  margin-top:3em;
+}
+
+
+p{
+  font-weight: 600;
+}
+
+.div_circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:7em;
+  height:7em;
+  border-radius: 50%;
+  padding:0.5em;
+  margin:0em 0.5em; 
+  font-weight: 600;
+  background:rgba(125, 143, 128, 0.644);
+  border:none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  cursor:pointer;
+}
+
+.rows{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.purple{
+  background-color: purple;
+}
+
+h3{
+  font-weight: 600;
+  color:white;
+  text-align: center;
+  margin:4em 0em;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#video{
+  width:600px;
+  height: 350px;
+}
+@media only screen and (max-width:600px) {
+
+  #video{
+    width:80vw;
+    height: 50vw;
+  }
+  #title{
+    font-size: 3em;
+  }
+  .rombo {
+    margin:15vw 0em;
+    width: 60vw; 
+    height: 60vw; 
+  }
+  .text{
+    font-size: 1em;
+    text-align: center;
+  }
+  .div_circle{
+    width:5em;
+    height:5em;
+    margin:1em;
+  }
+}
